@@ -1,0 +1,136 @@
+<!-- 标记为标准html渲染 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 设置语言为utf-8 -->
+    <meta charset="UTF-8">
+    <title>
+        页面标题
+    </title>
+</head>
+<!-- body:表示html正文 -->
+
+<body>
+
+    <a id="tips">链接的id标签(用来跳转):提示部分</a>
+
+    <h1>我的第一个标题</h1>
+    <!-- 字体展示 -->
+    <font size="6">字体-----这是第六号字体</font>
+    <h2>这是第二个标题</h2>
+    <!-- 标题 -->
+    <h3>这是第三个标题</h3>
+    <!-- p:段落 -->
+    <P>我的第一个段落.</P>
+    <p>这是另一个段落...</p>
+    <!-- 链接 -->
+    <a href="https://www.baidu.com">这是一个链接</a>
+    <!--
+             ./：代表文件所在的目录（可以省略不写）如果写成image/background就相当于是在html文件下找image文件夹，当然是找不到的
+             ../：代表文件所在的父级目录
+             ../../：代表文件所在的父级目录的父级目录
+            /：代表文件所在的根目录 
+        -->
+    <img decoding="async" src="https://pic1.zhimg.com/80/v2-6acf26119de4ef702c58a3bd1940fc70_1440w.webp" width="300"
+        height="200" />
+    <!-- 换行 -->
+    <br />
+    <!-- 分割线 -->
+    <hr />
+    <!-- 本地图片资源展示 -->
+    <img decoding="async" src="res/zzz.png" width="600" height="200" />
+
+    <!-- 折行 -->
+    <p>这个<br>演示了分行的效果</p>
+
+    <br />
+
+    <!-- 对于 HTML，您无法通过在 HTML 代码中添加额外的空格或换行来改变输出的效果。 -->
+    <p>春眠不觉晓，
+        处处闻啼鸟。
+        夜来风雨声，
+        花落知多少。
+    </p>
+    <p>注意，浏览器忽略了源代码中的排版（省略了多余的空格和换行）。</p>
+
+
+    <br />
+
+    <p>文本格式化</p>
+    <b>加粗文本</b>
+    <i>斜体文本</i>
+    <code>电脑自动输出</code><br><br>
+    这是<sub>下标</sub>和<sup>上标</sup>
+
+
+    <code>计算机输出</code>
+    <br />
+    <kbd>键盘输入</kbd>
+    <br />
+    <tt>打字机文本</tt>
+    <br />
+    <samp>计算机代码样本</samp>
+    <br />
+    <var>计算机变量</var>
+    <br />
+
+    <!-- 改变文字的方向 -->
+    <hr />
+    <p>该段落文字从左到右显示</p>
+    <p><bdo dir="rtl">该段落文字从右到左显示.</bdo></p>
+
+
+    <!-- 缩写和首字母缩写 -->
+    <hr />
+    <p>缩写和首字母缩写</p>
+    <abbr title="etcetera">etc.</abbr>
+    <br />
+    <acronym title="World Wide Web">WWW</acronym>
+
+    <p>在某些浏览器中，当您把鼠标移至缩略词语上时，title 可用于展示表达的完整版本。</p>
+
+    <p>WWF's goal is to:
+        <q>Build a future where people live in harmony with nature.</q>
+        We hope they succeed.
+    </p>
+
+    <!-- 删除线效果 -->
+    <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+
+
+    <!-- 超链接如何打开 -->
+    <a href="https://www.runoob.com/" target="_blank" rel="noopener noreferrer">访问菜鸟教程!</a>
+
+
+    <!-- 链接- id 属性 -->
+
+    <br />
+    <br />
+
+    <a href="#tips">访问提示部分</a>
+
+
+    <!-- 请始终将正斜杠添加到子文件夹。假如这样书写链接：href="https://www.runoob.com/html"，
+        就会向服务器产生两次 HTTP 请求。这是因为服务器会添加正斜杠到这个地址，然后创建一个新的请求，
+        就像这样：href="https://www.runoob.com/html/"。 -->
+
+    <p>跳出框架?</p>
+    <a href="http://www.runoob.com/" target="_top">点击这里!</a>
+
+
+    <p>
+        这是一个电子邮件链接：
+        <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+            发送邮件</a>
+    </p>
+
+    <p>
+        这是另一个电子邮件链接：
+        <a href="mailto:someone@example.com?cc=someoneelse@example.com&bcc=andsomeoneelse@example.com&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!"
+            target="_top">发送邮件!</a>
+    </p>
+</body>
+
+
+</html>
